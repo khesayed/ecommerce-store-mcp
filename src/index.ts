@@ -116,7 +116,7 @@ server.tool(
 // Resources
 server.resource(
   "Shopping Policy",
-  "file:///data/shopping-policy.md",
+  "docs:///policy/shopping.md",
   async (uri) => {
     try {
       const { fileURLToPath } = await import("url");
@@ -124,8 +124,8 @@ server.resource(
       const { readFile } = await import("fs/promises");
       const __filename = fileURLToPath(import.meta.url);
       const __dirname = path.dirname(__filename);
-
-      const filePath = path.join(__dirname, "data/shopping-policy.md");
+      const __fileDirectory = path.join(__dirname, '../data');
+      const filePath = path.join(__fileDirectory, "shopping-policy.md");
 
       const data = await readFile(filePath, "utf8");
 
