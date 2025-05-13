@@ -1,6 +1,6 @@
 {
   "name": "ecommerce-store-mcp",
-  "description": "Ecommerce store node mcp server, enable AI to create, list, delete products and check store shopping and checkout policies",
+  "description": "MCP (Model Context Protocol) server built with Node.js that provides contextual ecommerce tools such as product listing, retrieval, cart management, and shopping policy access for intelligent agent interactions",
   "version": "1.0.0",
   "type": "module",
   "main": "bin/index.js",
